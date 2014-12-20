@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Learn AngularJS with Me!</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 </head>
 <body>
-	<div>
-		<p>Name: <input type="text"></p>
+	<div ng-app="">
+		<p>Name: <input type="text" ng-model="name"></p>
+		<p ng-bind="name"></p>
 	</div>
 </body>
 </html>
